@@ -1,0 +1,48 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.d/
+crash.log
+crash.*.log
+
+# Biến nhạy cảm — không bao giờ commit tfvars chứa secret lên git
+*.tfvars
+*.tfvars.json
+# Ngoại lệ: file tfvars mẫu không chứa giá trị thật thì có thể track
+!*.tfvars.example
+
+# Override files (dùng cho local dev, không thuộc về repo chung)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI output / plan files
+*.tfplan
+*.plan
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python (load-generator, scripts)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node (nếu có script helper)
+node_modules/
+
+# Log files
+*.log
+
+.antigravity/
