@@ -22,6 +22,7 @@ override.tf.json
 # CLI output / plan files
 *.tfplan
 *.plan
+tfplan
 
 # OS & editor
 .DS_Store
